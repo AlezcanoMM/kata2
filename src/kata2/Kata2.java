@@ -7,8 +7,9 @@ public class Kata2 {
     
     public static void main(String[] args) {
         Integer[] data = {1, 2, 3, 4, 5, 7, 7, 7, 9, 1, 1, 1, 3, 4, 5};
+        String[] data2 = {"Pepe", "Fulano", "Fulano", "Ana", "Mengano", "Aitana", "Mengano", "Fulano", "Aitana", "Maria"};
         
-        Histogram meta_histogram = new Histogram(data);  
+        Histogram meta_histogram = new Histogram(data2);  
         Map<Integer, Integer> histogram = meta_histogram.getHistogram();
         
         Iterator<Map.Entry<Integer, Integer>> entries = histogram.entrySet().iterator();
